@@ -22,7 +22,7 @@
         }
         public override string ToString()
         {
-            return "su nombre de usuario es: " + nombre + " su clave es: " + Contraseña;
+            return "su nombre de usuario es: " + nombre + " su contraseña  es: " + Contraseña;
         }
     }
 }
