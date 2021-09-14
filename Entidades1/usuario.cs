@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-namespace Tienda.Endidades
+﻿namespace Usuario
 {
-    class Clspersona
+    public class usuario
     {
+        internal static string Contraseña;
+        internal static string nombre;
+
         public class Entidades
-      {
-            private String nombre = "Cristian";
-            private int Contraseña = 123;
+        {
+
+            private string nombre;
+            private int Contraseña;
 
             public Entidades(string nombre, int contraseña)
             {
@@ -21,9 +20,9 @@ namespace Tienda.Endidades
             public string Nombre { get => nombre; set => nombre = value; }
             public int Contraseña1 { get => Contraseña; set => Contraseña = value; }
         }
-  }
+        public override string ToString()
+        {
+            return "su nombre de usuario es: " + nombre + " su clave es: " + Contraseña;
+        }
+    }
 }
-
-
-
-
